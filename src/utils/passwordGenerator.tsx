@@ -1,23 +1,25 @@
-export function PasswordGenerator(){
+export function PasswordGenerator() {
+    // Variable with all available characters that can make part of the password
+    const availableCharacters: string = "ABCDEFGH";
 
-    //Variable with all available characters that can make part of the password
-    var availableCharacters: string = "❤️💛💚💙💜🖤🤍🤎🧡";
+    // Function to generate a random password of given length
+    const generatePassword = (length: number) => {
+        let finalPassword: string[] = [];
 
-    //Array that will receive the password of 4 hearts
-    var FinalPassword: string[] = [];
+        for (let i = 0; i < length; i++) {
+            // Generate a random index within the range of availableCharacters
+            const randIndex: number = Math.floor(Math.random() * availableCharacters.length);
 
+            // Get the character at the random index and push it to finalPassword
+            const randomChar: string = availableCharacters.charAt(randIndex);
+            finalPassword.push(randomChar);
+        }
 
-    let i = 0;
-    while(i < 5){
-        //Variable that will hold a random value of 1 to the length of the array 
-        let rand:number = (Math.random() * availableCharacters.length);
-
-        //Variable that will take the random correspondent value of the array to the final password
-        let pusher:string = availableCharacters.charAt(rand);
-
-        FinalPassword.push(pusher);
-        i++; 
+        return finalPassword;
     }
-    return FinalPassword;
+
+    // Generate a password of length 4 by default
+    return generatePassword(4);
 }
+
 

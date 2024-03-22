@@ -30,3 +30,11 @@ p {
   transform: translatey(0px);
   animation: float 3s ease-in-out infinite;
 }
+
+.counter {
+  position: absolute;
+  border: 1px solid purple;
+  float: right;
+  right: 0;
+  top: 0;
+}
