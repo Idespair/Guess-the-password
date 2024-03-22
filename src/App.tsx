@@ -13,9 +13,6 @@ function App() {
           <div className='buttons'>
             <UserButtons/>
           </div>
-        <button>
-          Enviar
-        </button>
       </div>
     </>
   )
