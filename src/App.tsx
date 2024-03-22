@@ -1,6 +1,6 @@
 import lock from './assets/lock.png'
 import './App.css'
-import { UserButtons } from './components/UserButtons'
+import { UserButtons } from './components/UserButtons'  
 
 function App() {
   return (

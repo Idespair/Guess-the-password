@@ -4,13 +4,15 @@ import { PasswordGenerator } from '../utils/passwordGenerator';
 
 export function UserButtons(){
 
-    const [chars, setChars] =  useState(String);
+    PasswordGenerator
 
-    const charLimit = 8;
+    const [chars, setChars] =  useState<string[]>([]);
+
+    const charLimit = 4;
 
     const addChar = (hearts:string) => {
         if (charLimit > chars.length){
-            setChars(prevChar => prevChar + hearts)
+            setChars(prevChar => [...prevChar, hearts])
         }   
     }
 
@@ -28,7 +30,7 @@ export function UserButtons(){
         <button className='userButtons' onClick={() => setChars(chars.slice(0,-2))}><Delete /></button>
         <div>
             <p>
-            {chars}
+            {chars.join('')}
             </p>
         </div>
        </div>
