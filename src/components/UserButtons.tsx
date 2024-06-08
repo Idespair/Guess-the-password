@@ -1,5 +1,5 @@
 // UserButtons.tsx
-import React, { useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { Delete } from 'lucide-react';
 import { PasswordGenerator } from '../utils/passwordGenerator';
 import ModalFim from './modal';
