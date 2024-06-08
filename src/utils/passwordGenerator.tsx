@@ -1,6 +1,6 @@
 export function PasswordGenerator() {
     // Variable with all available characters that can make part of the password
-    const availableCharacters: string = "ABCDEFGH";
+    const availableCharacters: string = "ABCDEF";
 
     // Function to generate a random password of given length
     const generatePassword = (length: number) => {
