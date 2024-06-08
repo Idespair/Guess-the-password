@@ -22,7 +22,7 @@ const ModalFim: React.FC<ModalFimProps> = ({ isOpen, onRequestClose, onPlayNewGa
       <div className="modal-content">
         <h2>BOA, AMOR!!!!</h2>
         <img
-          src=".\src\assets\modal.gif"
+          src="\src\assets\modal.gif"
           alt="Cute Kitten"
           className="kitten-image"
         />
