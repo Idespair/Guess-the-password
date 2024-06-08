@@ -50,8 +50,6 @@ export function UserButtons() {
       {[
         { heart: '💜', undercover: 'A' },
         { heart: '❤️', undercover: 'B' },
-        { heart: '🤎', undercover: 'C' },
-        { heart: '💛', undercover: 'D' },
       ].map(({ heart, undercover }) => (
         <button key={undercover} className='userButton' onClick={() => addChar(heart, undercover)}>
           {heart}
